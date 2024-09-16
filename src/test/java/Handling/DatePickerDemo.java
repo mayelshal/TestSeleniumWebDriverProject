@@ -14,10 +14,12 @@ public class DatePickerDemo {
     //Select future date
     static void selectFutureDate(WebDriver driver,String month,String year,String day)
     {
-        while (true) {
+        while (true)
+        {
             String Currentmonth = driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
             String CurrentYear = driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
-            if (Currentmonth.equals(month) && (CurrentYear.equals(year))) {
+            if (Currentmonth.equals(month) && (CurrentYear.equals(year)))
+            {
                 break;
 
             }
